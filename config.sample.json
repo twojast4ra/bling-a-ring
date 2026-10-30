@@ -1,0 +1,51 @@
+{
+  "mqtt_host": "127.0.0.1",
+  "mqtt_port": 1883,
+  "rtsp_base": "rtsp://127.0.0.1:8554",
+  "record_rtsp": "rtsp://127.0.0.1:8556",
+  "clips_dir": "/var/lib/bling-a-ring/clips",
+  "clip_max_seconds": 120,
+  "post_motion_seconds": 8,
+  "retention_days": 14,
+  "max_clips_gb": 20,
+  "ffmpeg": "ffmpeg",
+  "cameras": {},
+  "auth_enabled": false,
+  "ui_user": "nvr",
+  "ui_password": "CHANGEME",
+  "ui_port": 8970,
+  "host_ip": "0.0.0.0",
+  "https": {
+    "enabled": true,
+    "port": 8943
+  },
+  "push": {
+    "enabled": true,
+    "contact": "mailto:admin@example.com"
+  },
+  "go2rtc_local": "http://127.0.0.1:1984",
+  "live_stream": "",
+  "ring": {
+    "enabled": true
+  },
+  "blink": {
+    "enabled": true,
+    "state_dir": "/opt/bling-a-ring/blink-state",
+    "poll_seconds": 1800,
+    "local_poll_seconds": 60,
+    "backfill": 15,
+    "live_port": 8971
+  },
+  "ntfy": {
+    "enabled": false,
+    "server": "http://127.0.0.1:8099",
+    "topic": "bling-a-ring",
+    "token": "",
+    "doorbell_sound": ""
+  },
+  "chime": {
+    "local_enabled": false,
+    "doorbell_sound": "/opt/bling-a-ring/sounds/doorbell.wav",
+    "player": ""
+  }
+}
